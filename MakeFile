@@ -1,0 +1,17 @@
+DynPipe : DynPipe.o
+	g++ -o DynPipe DynPipe.o
+
+DynPipe.o : DynPipe.cpp
+	g++ -c DynPipe.cpp
+
+TwoPipesThreeChildren : TwoPipesThreeChildren.o
+	g++ -o TwoPipesThreeChildren TwoPipesThreeChildren.o
+
+TwoPipesThreeChildren.o : TwoPipesThreeChildren.cpp
+	g++ -c TwoPipesThreeChildren.cpp
+
+TwoPipesTwoChildren : TwoPipesTwoChildren.o
+	g++ -o TwoPipesTwoChildren TwoPipesTwoChildren.o
+
+TwoPipesTwoChildren.o : TwoPipesTwoChildren.cpp
+	g++ -c TwoPipesTwoChildren.cpp
